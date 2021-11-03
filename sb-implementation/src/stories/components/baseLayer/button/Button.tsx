@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import classNames from "classnames/bind";
 import classNames from "classnames";
-import './button.css';
+import './button.scss';
 /**
  * Primary UI component for user interaction
  */
 //@ts-ignore
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-
-  // const cx = classNames.bind(styles)
 
 
   const buttonClassname = classNames({
