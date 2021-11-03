@@ -1,16 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import classNames from "classnames/bind";
+import classNames from "classnames";
 import './button.css';
-
 /**
  * Primary UI component for user interaction
  */
+//@ts-ignore
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
+  // const cx = classNames.bind(styles)
+
+
+  const buttonClassname = classNames({
+    ['storybook-button--primary']: primary,
+    ['storybook-button--secondary']: !primary,
+    [`storybook-button--${size}`]: true,
+    ['storybook-button']: true
+  })
+
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={buttonClassname}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
