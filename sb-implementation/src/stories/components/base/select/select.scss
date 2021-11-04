@@ -1,0 +1,104 @@
+@import "./src/stories/styles/index";
+.select-container {
+  display: flex;
+  position: relative;
+  font-family: $typography-1;
+  width: max-content;
+  min-width: 120px;
+  &:focus-within{
+    &:after{
+      transform: rotate(180deg);
+      top: 50%;
+    }
+  }
+  &:after{
+    content: '\A';
+    width: 10px;
+    height: 10px;
+    border: solid 5px transparent;
+    border-bottom: solid 5px $gams-gray-1;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 4px;
+  }
+  select {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px $gams-white-2;
+    font-weight: normal;
+    color: $gams-black-1;
+    padding: 16px 0 4px;
+    transition: border-bottom-color 0.3s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+    &.select-primary:focus {
+      border-bottom: solid 2px $gams-red-0;
+    }
+    &.select-secondary:focus {
+      border-bottom: solid 2px $gams-blue-0;
+    }
+    &.select-small {
+      font-size: 12px;
+    }
+    &.select-medium {
+      font-size: 14px;
+    }
+    &.select-large {
+      font-size: 16px;
+    }
+  }
+  label {
+    cursor: pointer;
+    pointer-events: none;
+    position: absolute;
+    top: 16px;
+    transition: all 0.3s;
+    &.label-small {
+      font-size: 12px;
+    }
+    &.label-medium {
+      font-size: 14px;
+    }
+    &.label-large {
+      font-size: 16px;
+    }
+  }
+  &.filled,
+  &:focus-within {
+    label {
+      top: 0;
+      transition: all 0.3s;
+      &.label-small {
+        font-size: 10px;
+      }
+      &.label-medium {
+        font-size: 12px;
+      }
+      &.label-large {
+        font-size: 14px;
+      }
+    }
+  }
+  &.disabled {
+    opacity: 0.5;
+  }
+  &.error {
+    label {
+      color: $gams-red-1;
+    }
+    select {
+      border-bottom-color: $gams-red-1;
+    }
+  }
+}
