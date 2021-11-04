@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c53afb21-083f-4b08-9e84-a334d80d1ed2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sb-implementation/.storybook/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SB-Implementation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sb-implementation/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sb-implementation/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sb-implementation/src/stories/components/baseLayer/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/sb-implementation/src/stories/components/baseLayer/button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sb-implementation/src/stories/components/baseLayer/button/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sb-implementation/src/stories/components/baseLayer/button/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sb-implementation/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sb-implementation/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="c53afb21-083f-4b08-9e84-a334d80d1ed2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sb-implementation" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -58,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635945460123</updated>
       <workItem from="1635945464710" duration="11052000" />
+      <workItem from="1636025561930" duration="16000" />
     </task>
     <servers />
   </component>
