@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./header.css";
+import "./header.scss";
 
 export type HeaderProps = {
   user: string;

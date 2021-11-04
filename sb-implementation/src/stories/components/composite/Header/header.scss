@@ -1,0 +1,26 @@
+@import "src/stories/styles/index";
+
+header {
+  padding: 10px 15px;
+  background-color: $gams-blue-0;
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1, h2 {
+      font-family: $typography-1;
+      margin: 12px 0;
+      font-weight: normal;
+    }
+    h1 {
+      font-size: 18px;
+      color: white;
+    }
+    h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
