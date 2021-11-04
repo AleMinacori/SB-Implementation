@@ -4,7 +4,7 @@ import classNames from "classnames";
 import "./content.scss";
 
 export type ContentProps = {
-  children: Node;
+  children: any;
 };
 
 export const Content = ({ children }: ContentProps) => {

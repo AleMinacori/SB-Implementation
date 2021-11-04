@@ -15,7 +15,7 @@ button {
       background-color: $gams-red-1;
       cursor: unset;
     }
-    &:active &:not(.disabled){
+    &:active:not(.disabled){
       background-color: $gams-red-2;
     }
   }
@@ -25,7 +25,7 @@ button {
       background-color: $gams-blue-1;
       cursor: unset;
     }
-    &:active &:not(.disabled){
+    &:active:not(.disabled){
       background-color: $gams-blue-2;
     }
   }
