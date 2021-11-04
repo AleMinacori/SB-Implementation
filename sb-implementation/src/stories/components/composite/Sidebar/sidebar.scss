@@ -1,0 +1,28 @@
+@import "src/stories/styles/index";
+
+.sidebar-container{
+  width: $sidebar-width;
+  display: block;
+  height: 100vh;
+  background-color: $gams-blue-0;
+  .sidebar-title{
+    padding: 10px 15px;
+    background-color: $gams-blue-0;
+    h1 {
+      font-family: $typography-1;
+      color: white;
+      font-size: 16px;
+    }
+  }
+  .sidebar-link-container{
+    font-family: $typography-1;
+    background-color: $gams-blue-0;
+    display: flex;
+    flex-direction: column;
+    div{
+      width: 100%;
+      color: white;
+      padding: 10px 15px;
+    }
+  }
+}
