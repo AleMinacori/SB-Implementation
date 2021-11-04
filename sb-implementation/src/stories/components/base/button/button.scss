@@ -1,0 +1,44 @@
+@import "./src/stories/styles/index";
+button {
+  font-family: $typography-1;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  &.button-primary {
+    background-color: $gams-red-0;
+    &.disabled {
+      background-color: $gams-red-1;
+      cursor: unset;
+    }
+    &:active &:not(.disabled){
+      background-color: $gams-red-2;
+    }
+  }
+  &.button-secondary {
+    background-color: $gams-blue-0;
+    &.disabled {
+      background-color: $gams-blue-1;
+      cursor: unset;
+    }
+    &:active &:not(.disabled){
+      background-color: $gams-blue-2;
+    }
+  }
+  &.button-small {
+    font-size: 10px;
+    padding: 10px 22px;
+  }
+  &.button-medium {
+    font-size: 12px;
+    padding: 12px 30px;
+  }
+  &.button-large {
+    font-size: 14px;
+    padding: 14px 38px;
+  }
+}

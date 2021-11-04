@@ -1,0 +1,75 @@
+@import "./src/stories/styles/index";
+.input-container {
+  display: flex;
+  position: relative;
+  font-family: $typography-1;
+  width: max-content;
+  input {
+    border: none;
+    border-bottom: solid 1px $gams-white-2;
+    font-weight: normal;
+    color: $gams-black-1;
+    padding: 16px 0 4px;
+    transition: border-bottom-color .3s;
+    &:focus{
+        outline: none;
+    }
+    &.input-primary:focus{
+      border-bottom: solid 2px $gams-red-0;
+    }
+    &.input-secondary:focus{
+      border-bottom: solid 2px $gams-blue-0;
+    }
+    &.input-small {
+      font-size: 12px;
+    }
+    &.input-medium {
+      font-size: 14px;
+    }
+    &.input-large {
+      font-size: 16px;
+    }
+  }
+  label {
+    cursor: text;
+    pointer-events: unset;
+    position: absolute;
+    top: 16px;
+    transition: all .3s;
+    &.label-small {
+      font-size: 12px;
+    }
+    &.label-medium {
+      font-size: 14px;
+    }
+    &.label-large {
+      font-size: 16px;
+    }
+  }
+  &.filled, &:focus-within{
+    label {
+      top: 0;
+      transition: all .3s;
+      &.label-small {
+        font-size: 10px;
+      }
+      &.label-medium {
+        font-size: 12px;
+      }
+      &.label-large {
+        font-size: 14px;
+      }
+    }
+  }
+  &.disabled {
+    opacity: .5;
+  }
+  &.error{
+    label {
+      color: $gams-red-1
+    }
+    input {
+      border-bottom-color: $gams-red-1;
+    }
+  }
+}

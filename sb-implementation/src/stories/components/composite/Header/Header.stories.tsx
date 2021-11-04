@@ -1,18 +1,18 @@
-import React from 'react';
-
-import { Header } from './Header';
+import React, { ComponentProps } from "react";
+import { Story, Meta } from "@storybook/react";
+import { Header } from "./Header";
 
 export default {
-  title: 'Example/Header',
+  title: "Composite Components/Header",
   component: Header,
+} as Meta;
+
+const Template: Story<ComponentProps<typeof Header>> = (args) => (
+  <Header {...args} />
+);
+
+export const Default = Template.bind({});
+Default.args = {
+  user: "Alejandro Minacori",
+  title: "Nueva órden de trabajo",
 };
-
-const Template = (args) => <Header {...args} />;
-
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
-};
-
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
