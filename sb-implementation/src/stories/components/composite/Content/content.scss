@@ -3,9 +3,9 @@
 .content-container{
   width: 100%;
   height: calc(100vh - 65px);
+  overflow-y: scroll;
   background-color: $gams-white-1;
   .content{
-    @include grid();
     @include container();
   }
 }

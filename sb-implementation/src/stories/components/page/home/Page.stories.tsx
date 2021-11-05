@@ -18,9 +18,7 @@ export const Default = Template.bind({});
 Default.args = {
   // More on composing args: https://storybook.js.org/docs/react/writing-stories/args#args-composition
   //@ts-ignore
-
   headerProps: { ...HeaderStories.Default.args },
   //@ts-ignore
-
   sidebarProps: { ...SidebarStories.Default.args },
 };

@@ -4,6 +4,7 @@
   width: $sidebar-width;
   display: block;
   height: 100vh;
+  max-height: 100vh;
   background-color: $gams-blue-0;
   .sidebar-title{
     padding: 10px 15px;
@@ -19,6 +20,8 @@
     background-color: $gams-blue-0;
     display: flex;
     flex-direction: column;
+    max-height: calc(100% - 65px );
+    overflow-y: scroll;
     button {
       color: white;
       padding: 10px 15px;
@@ -27,6 +30,9 @@
       text-align: left;
       &:hover:not(.button-primary){
         background-color: $gams-blue-2;
+      }
+      &:last-child{
+        margin-bottom: 10px;
       }
     }
   }
