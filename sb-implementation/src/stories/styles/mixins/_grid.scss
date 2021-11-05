@@ -1,0 +1,36 @@
+/* Grid */
+@use "breakpoints" as *;
+
+@mixin container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+  @include md {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+
+  @include lg {
+    max-width: 1920px;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+  }
+}
+
+@mixin grid($columns: 12) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: 1.3125rem;
+
+  @include md {
+    grid-gap: 1.5rem;
+  }
+
+  @include lg {
+    grid-gap: 1.75rem;
+  }
+}
+
+@mixin column($col: 1) {
+  grid-column: auto/span $col;
+}
