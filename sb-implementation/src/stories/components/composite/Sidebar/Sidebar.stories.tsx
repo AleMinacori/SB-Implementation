@@ -13,6 +13,6 @@ const Template: Story<ComponentProps<typeof Sidebar>> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  optionItems: ["Usuarios", "Órdenes de trabajo", "Stock", "Gestión"],
+  optionItems: ["Usuarios", "O. Trabajo", "Stock", "Gestión"],
   title: "GAMS",
 };

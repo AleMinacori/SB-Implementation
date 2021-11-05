@@ -4,10 +4,8 @@
   width: 100%;
   height: calc(100vh - 65px);
   background-color: $gams-white-1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  @include grid();
-  @include container();
+  .content{
+    @include grid();
+    @include container();
+  }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from "classnames";
 
 import "./content.scss";
 
@@ -8,9 +7,9 @@ export type ContentProps = {
 };
 
 export const Content = ({ children }: ContentProps) => {
-  const contentContainerClassname = classNames({
-    ["content-container"]: true,
-  });
-
-  return <div className={contentContainerClassname}>{children}</div>;
+  return (
+    <div className={"content-container"}>
+      <div className={"content"}>{children}</div>
+    </div>
+  );
 };

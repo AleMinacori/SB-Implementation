@@ -19,10 +19,15 @@
     background-color: $gams-blue-0;
     display: flex;
     flex-direction: column;
-    div{
-      width: 100%;
+    button {
       color: white;
       padding: 10px 15px;
+      margin: 10px 15px 0;
+      line-height: 30px;
+      text-align: left;
+      &:hover:not(.button-primary){
+        background-color: $gams-blue-2;
+      }
     }
   }
 }
