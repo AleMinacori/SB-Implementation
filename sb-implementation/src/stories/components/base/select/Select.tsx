@@ -7,7 +7,7 @@ import "./select.scss";
 
 export type optionItem = {
   label: string;
-  value: string;
+  value: string | number;
 };
 
 export type SelectProps = {
@@ -16,7 +16,7 @@ export type SelectProps = {
   optionItems: optionItem[];
   size?: "small" | "medium" | "large";
   disabled?: boolean;
-  defaultValue?: string;
+  defaultValue?: string | number;
   hasError?: boolean;
   onChange?: Function;
 };
@@ -31,7 +31,9 @@ export const Select = ({
   onChange,
   optionItems,
 }: SelectProps) => {
-  const [value, setValue]: [string, Function] = useState(defaultValue || "");
+  const [value, setValue]: [string | number, Function] = useState(
+    defaultValue || ""
+  );
 
   useEffect(() => {
     setValue(defaultValue);
@@ -69,10 +71,10 @@ export const Select = ({
         className={inputClassname}
         disabled={disabled}
         id={`select-${label}`}
-        defaultValue={defaultValue}
+        defaultValue={value}
         onChange={(e) => handleOnChange(e)}
       >
-        <option disabled={true} selected={true} />
+        <option value={""} />
         {optionItems.map((option: optionItem) => {
           return <option value={option.value}>{option.label}</option>;
         })}

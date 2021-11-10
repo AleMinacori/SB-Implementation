@@ -4,9 +4,15 @@ import classNames from "classnames";
 import "./sidebar.scss";
 import { Button } from "../../base/button/Button";
 
+export type LinkSidebarProps = {
+  title: string;
+  subtitle: string;
+  component: any;
+};
+
 export type SidebarProps = {
   title: string;
-  optionItems: string[];
+  optionItems: LinkSidebarProps[];
 };
 
 export const Sidebar = ({ title, optionItems }: SidebarProps) => {
@@ -25,7 +31,7 @@ export const Sidebar = ({ title, optionItems }: SidebarProps) => {
         {optionItems.map((item, index: number) => {
           return (
             <Button
-              label={item}
+              label={item.title}
               variant={linkSelected === index ? "primary" : "secondary"}
               onClick={() => setLink(index)}
               key={index}

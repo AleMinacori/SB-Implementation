@@ -1,6 +1,7 @@
 import React, { ComponentProps } from "react";
 import { Story, Meta } from "@storybook/react";
 import { Sidebar } from "./Sidebar";
+import { sidebarLinks } from "../../../utils/constants/sidebarLinks";
 
 export default {
   title: "Composite Components/Sidebar",
@@ -13,15 +14,6 @@ const Template: Story<ComponentProps<typeof Sidebar>> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  optionItems: [
-    "Actividades",
-    "Stock",
-    "O. Trabajo",
-    "Preventivo",
-    "Productos",
-    "Usuarios",
-    "Gestión",
-    "Salir",
-  ],
+  optionItems: sidebarLinks,
   title: "GAMS",
 };
